@@ -43,5 +43,5 @@ app.post("/product/review", (req, res) => {
     res.status(200).json(updatedProduct);
   }
 });
-
-app.listen(4500, () => console.log(`Starting at localhost:4500`));
+const port = process.env.PORT || 4500
+app.listen(port, () => console.log(`Starting at localhost:4500`));
