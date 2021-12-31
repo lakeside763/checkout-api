@@ -22,7 +22,6 @@ app.get("/product", (req, res) => {
 
 app.post("/product/review", (req, res) => {
   const { id, averageRating, totalReviews, ...rest } = req.body;
-  console.log(req.body);
   const product = products.find((product) => product.id === id);
   if (product.reviews) {
     const updatedProduct = {
