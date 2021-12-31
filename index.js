@@ -1,9 +1,9 @@
-import compression from "compression";
-import express from "express";
-import cors from "cors";
-import products from "./products.json";
-import fs from "fs";
-import path from "path";
+const compression = require("compression");
+const express = require("express");
+const cors = require("cors");
+const products = require("./products.json");
+const fs = require("fs");
+const path = require("path");
 
 const app = express();
 

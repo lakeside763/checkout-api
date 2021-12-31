@@ -6,10 +6,9 @@
   "author": "Moses Idowu",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --experimental-modules --experimental-json-modules --es-module-specifier-resolution=node index.js",
-    "start": "node --experimental-modules --experimental-json-modules --es-module-specifier-resolution=node index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
-  "type": "module",
   "dependencies": {
     "compression": "^1.7.4",
     "cors": "^2.8.5",
