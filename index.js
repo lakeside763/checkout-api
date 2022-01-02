@@ -18,7 +18,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/product", async (req, res) => {
-  const products = await prisma.products.findMany({});
+  const products = await prisma.products.findMany({
+    include: { reviews: true },
+  });
   res.status(200).json(products);
 });
 
